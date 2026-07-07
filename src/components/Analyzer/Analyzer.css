@@ -1,0 +1,96 @@
+.analyzer {
+  padding: 0 0 80px;
+}
+
+.analyzer-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.analyzer-header h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.analyzer-header p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.analyzer textarea {
+  width: 100%;
+  min-height: 360px;
+
+  padding: 20px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface);
+
+  color: var(--color-text);
+
+  font-family: Consolas, Monaco, monospace;
+  font-size: .95rem;
+  line-height: 1.7;
+
+  resize: vertical;
+  outline: none;
+
+  transition: var(--transition);
+}
+
+.analyzer textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(37,99,235,.12);
+}
+
+.analyze-button {
+  margin-top: 24px;
+
+  padding: 14px 30px;
+
+  background: var(--color-primary);
+
+  color: #fff;
+
+  border-radius: var(--radius-md);
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.analyze-button:hover {
+  background: var(--color-primary-hover);
+}
+
+.analysis-results {
+  margin-top: 48px;
+}
+
+.result-grid {
+  margin-top: 32px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 20px;
+}
+
+@media (max-width:768px) {
+
+  .analyzer {
+    padding-bottom: 60px;
+  }
+
+  .analyzer-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .analyzer textarea {
+    min-height: 260px;
+  }
+
+}

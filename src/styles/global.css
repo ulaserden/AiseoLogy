@@ -1,0 +1,46 @@
+body {
+  font-family: var(--font-family);
+
+  background: var(--color-background);
+
+  color: var(--color-text);
+
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(var(--container-width), 92%);
+  margin-inline: auto;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+}
+
+section {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}

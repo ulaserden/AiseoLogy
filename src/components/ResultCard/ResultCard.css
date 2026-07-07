@@ -1,0 +1,52 @@
+.result-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.result-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-card-header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.result-card-body p {
+  color: var(--color-text-secondary);
+  word-break: break-word;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.badge-success {
+  background: rgba(22,163,74,.12);
+  color: var(--color-success);
+}
+
+.badge-danger {
+  background: rgba(220,38,38,.12);
+  color: var(--color-danger);
+}
+
+.result-card.success {
+  border-left: 4px solid var(--color-success);
+}
+
+.result-card.danger {
+  border-left: 4px solid var(--color-danger);
+}

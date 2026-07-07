@@ -1,18 +1,130 @@
-# React + Vite
+# AiseoLogy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Analyze. Improve. Rank.
 
-Currently, two official plugins are available:
+AiseoLogy is a React-based SEO analysis tool that evaluates raw HTML source code and reports common on-page SEO issues. It is designed as a lightweight educational and portfolio project for developers who want to inspect HTML structure quickly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Analyze HTML source code
+- SEO Score (0–100)
+- Title detection
+- Meta Description detection
+- H1 & H2 analysis
+- Canonical URL detection
+- Robots Meta detection
+- Open Graph detection
+- Twitter Card detection
+- Image Alt analysis
+- Empty Link detection
+- SEO recommendations
+- Responsive interface
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6)
+- Vite
+- HTML5
+- CSS3
+
+---
+
+## Folder Structure
+
+```text
+src
+│
+├── assets
+│
+├── components
+│   ├── Analyzer
+│   ├── Footer
+│   ├── Header
+│   ├── Hero
+│   ├── RecommendationCard
+│   ├── ResultCard
+│   └── ScoreCard
+│
+├── hooks
+│
+├── pages
+│
+├── styles
+│
+├── utils
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## Installation
+
+Clone the repository.
+
+```bash
+git clone https://github.com/ulaserden/AiseoLogy.git
+```
+
+Go to the project directory.
+
+```bash
+cd AiseoLogy
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Start the development server.
+
+```bash
+npm run dev
+```
+
+Build the project.
+
+```bash
+npm run build
+```
+
+Preview the production build.
+
+```bash
+npm run preview
+```
+
+---
+
+## Roadmap
+
+### v1.0.0
+
+- HTML SEO Analyzer
+- SEO Score
+- Result Cards
+- Recommendations
+- Responsive Layout
+
+### Future
+
+- HTML File Upload
+- Drag & Drop
+- PDF Export
+- Dark Mode
+- JSON Export
+- URL Analysis
+
+---
+
+## License
+
+This project is licensed under the MIT License.
